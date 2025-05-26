@@ -101,8 +101,8 @@ const userSchema = new Schema<IUser>({
             enum: ['active', 'cancelled', 'past_due', 'trialing', 'incomplete'],
             default: 'active'
         },
-        stripeCustomerId: String,
-        stripeSubscriptionId: String,
+        razorpayCustomerId:String,
+        razorpaySubscriptionId:String,
         currentPeriodStart: Date,
         currentPeriodEnd: Date,
         cancelAtPeriodEnd: { type: Boolean, default: false },
