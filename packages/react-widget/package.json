@@ -1,0 +1,26 @@
+{
+  "name": "@chatbot-builder/react-widget",
+  "version": "1.0.0",
+  "description": "React component for ChatBot Builder widgets",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "rollup": "^3.0.0",
+    "typescript": "^4.9.0"
+  },
+  "keywords": ["chatbot", "react", "widget", "customer-support"],
+  "author": "ChatBot Builder",
+  "license": "MIT"
+}

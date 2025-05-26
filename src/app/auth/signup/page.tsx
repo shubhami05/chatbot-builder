@@ -61,11 +61,11 @@ export default function SignUpPage() {
       if (response.ok) {
         setSuccess(true);
         // Optionally auto-sign in after registration
-        await signIn('credentials', {
-          email: formData.email,
-          password: formData.password,
-          callbackUrl: '/dashboard'
-        });
+        // await signIn('credentials', {
+        //   email: formData.email,
+        //   password: formData.password,
+        //   callbackUrl: '/dashboard'
+        // });
       } else {
         setError(data.error || 'Failed to create account');
       }
